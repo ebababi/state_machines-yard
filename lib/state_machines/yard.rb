@@ -8,3 +8,4 @@ end
 require 'tempfile'
 require 'state_machines/yard/handlers'
 require 'state_machines/yard/templates'
+require 'state_machines/yard/options'

@@ -38,9 +38,11 @@ module StateMachines
           end
 
           # Define auto-generated methods
-          define_macro_methods
-          define_state_methods
-          define_event_methods
+          if StateMachines::YARD::Handlers.gen_doc_for_auto_methods
+            define_macro_methods
+            define_state_methods
+            define_event_methods
+          end
         end
 
         protected

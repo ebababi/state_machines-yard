@@ -14,7 +14,7 @@ module StateMachines
             names.each do |name|
               owner.event(name) do
                 # Parse the block
-                handler.parse_block(statement.last.last, owner: self)
+                handler.parse_block(statement.last.last, owner: self) if statement.last.last
               end
             end
           end

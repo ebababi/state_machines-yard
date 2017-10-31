@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'state_machines/yard/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'state_machines-yard'
+  spec.name = 'yard-state_machines'
   spec.version = StateMachines::Yard::VERSION
   spec.authors = ['Abdelkader Boudih', 'Aaron Pfeifer']
   spec.email = ['terminale@gmail.com']
   spec.summary = %q(State machines YARD plugin)
   spec.description = %q(State machines YARD plugin for automated documentation)
-  spec.homepage = 'https://github.com/state-machines/state_machines-yard'
+  spec.homepage = 'https://github.com/state-machines/yard-state_machines'
   spec.license = 'MIT'
 
   spec.required_ruby_version     = '>= 1.9.3'

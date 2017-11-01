@@ -20,7 +20,8 @@ module StateMachines
 
           # Track the state machine
           globals.state_machines[namespace.name][name] = machine
-          namespace['state_machines'][name] = {name: name, description: statement.docstring}
+          docstring = ::YARD::Docstring.parser.parse(statement.comments).to_docstring
+          namespace['state_machines'][name] = {name: name, description: docstring}
 
           # Parse the block
           parse_block(statement.last.last, owner: machine)

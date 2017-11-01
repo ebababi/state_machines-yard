@@ -20,6 +20,8 @@ module StateMachines
 
             owner.transition(options)
           end
+
+          register_docstring nil
         end
 
         private

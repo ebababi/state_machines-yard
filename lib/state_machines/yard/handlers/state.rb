@@ -18,6 +18,8 @@ module StateMachines
               end
             end
           end
+
+          register_docstring nil
         end
       end
     end

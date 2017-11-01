@@ -28,7 +28,7 @@ module StateMachines
         # Extracts the statement requirement from the given node
         def extract_requirement(ast)
           case ast.type
-            when :symbol_literal, :string_literal, :array
+            when :symbol_literal, :string_literal, :label, :array
               extract_node_names(ast, false)
             when :binary
               AllMatcher.instance - extract_node_names(ast.children.last)
